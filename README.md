@@ -1,2 +1,2 @@
 # myfirstluascript
-My first lua script made in LUA
+My first script made in LUA
