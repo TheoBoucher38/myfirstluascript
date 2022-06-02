@@ -1,4 +1,4 @@
---Variables
+-- Variables
 getgenv().autoclicker = false;
 getgenv().autorebirth = false;
 getgenv().autobuyegg = false;
@@ -84,7 +84,7 @@ end
 
 local library = loadstring(game:HttpGet(('https://raw.githubusercontent.com/TheoBoucher38/Wally-UI-backup/main/UI.lua')))()
 
-local w = library:CreateWindow("Clicking Farm") 
+local w = library:CreateWindow(" Clicking Madness 🔥") 
 
 local c = w:CreateFolder("Farming")
 
@@ -98,7 +98,7 @@ local g = w:CreateFolder("Misc")
 local selectedWorld;
 d:Dropdown("World",{"Lava","Desert","Ocean", "Toxic","Candy","Forest", "Storm","Blocks","Space", "Dominus","Infinity","Future", "City", "Moon","Fire"},true,function(value) --true/false, replaces the current title "Dropdown" with the option that t
     selectedWorld = value;
-    print(mob)
+    print("Teleported to :", value)
 end)
 
 d:Button("Teleport World", function()
@@ -120,23 +120,23 @@ end)
 
 c:Toggle("Auto Clicker",function(bool)
   autoclicker = bool
-    print("Auto clicker is ", bool);
+    print("Auto clicker is :", bool);
     if bool then
     doTap();
     end
 end)
 
-c:Toggle("Auto rebirth", function(bool)
+c:Toggle("Auto Rebirth", function(bool)
     getgenv().autorebirth = bool
-    print("Auto rebirth is: ", bool);
+    print("Auto rebirth is : ", bool);
     if bool then
-        autoRebirth(1000)
+        autoRebirth(10000000)
     end
 end)
 
-c:Toggle("Boss auto Clicker",function(bool)
+c:Toggle("Boss Auto Clicker",function(bool)
     autoclickerboss = bool
-    print("Boss auto clicker is ", bool);
+    print("Boss auto clicker is :", bool);
     if bool then
     bossAutoClicker();
     end
@@ -144,7 +144,7 @@ end)
 
 b:Toggle("Auto-buy egg", function(bool)
     getgenv().autobuyegg = bool
-    print("Auto-buy egg is: ", bool);
+    print("Auto-buy egg is : ", bool);
     if bool then
         autoBuyEgg()
     end
