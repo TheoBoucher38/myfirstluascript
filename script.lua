@@ -1,11 +1,10 @@
--- Variables globales
+--Variables
 getgenv().autoclicker = false;
 getgenv().autorebirth = false;
 getgenv().autobuyegg = false;
 getgenv().opendailychest = false;
 getgenv().autoclickerboss = false;
 getgenv().autobuy = false;
--- Variables
 local remotePath = game:GetService("ReplicatedStorage").Aero.AeroRemoteServices;
 local plyr = game.Players.LocalPlayer;
 local currentPosition = getCurrentPlayerPOS;
