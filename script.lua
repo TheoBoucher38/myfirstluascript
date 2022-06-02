@@ -83,7 +83,7 @@ end
 
 -- UI (open source)
 
-local library = loadstring(game:HttpGet(('https://raw.githubusercontent.com/AikaV3rm/UiLib/master/Lib.lua')))()
+local library = loadstring(game:HttpGet(('https://raw.githubusercontent.com/TheoBoucher38/Wally-UI-backup/main/UI.lua')))()
 
 local w = library:CreateWindow("Clicking Farm") 
 
@@ -94,8 +94,6 @@ local b = w:CreateFolder("Eggs")
 local d = w:CreateFolder("Teleport")
 
 local g = w:CreateFolder("Misc")
-
-
 
 
 local selectedWorld;
